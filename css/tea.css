@@ -29,9 +29,29 @@ main {
 	padding: 80px;
 }
 
+.accordion {
+	padding-top: 100px;
+}
+
+.accordion-body {
+	background: var(--second-colour);
+}
+
+.accordion-item {
+	--bs-accordion-active-bg: var(--first-colour);
+	--bs-accordion-color: var(--first-colour);
+	--bs-accordion-btn-color: var(--second-colour);
+	--bs-accordion-btn-bg: var(--first-colour);
+	--bs-accordion-active-color: var(--second-colour);
+}
+
+h2 {
+	padding-top: 50px;
+}
+
 header a,
 header a:visited,
-eader a:link,
+header a:link,
 footer a,
 footer a:visited,
 footer a:link {
@@ -64,10 +84,23 @@ footer a:hover {
 	color: var(--fourth-colour);
 }
 
+.product-container {
+	padding-top: 100px;
+	padding-left: 10vw;
+	padding-right: 10vw;
+	padding-bottom: 150px;
+}
+
 .product-header {
 	padding-top: 15px;
 	font-weight: bold;
 	text-align: center;
+}
+
+.col {
+	margin: 0;
+	padding: 0;
+	gap: 0;
 }
 
 .form-group, label {
@@ -76,6 +109,21 @@ footer a:hover {
 
 form {
 	padding-bottom: 150px;
+}
+
+.text-left {
+	padding-top: 15px;
+	padding-right: 20px;
+	font-weight: bold;
+	text-align: left;
+	border-right: 5px groove var(--second-colour);
+}
+
+.text-right {
+	padding-top: 15px;
+	font-weight: normal;
+	text-align: right;
+	border-left: 5px groove var(--fourth-colour);
 }
 
 img {
@@ -136,6 +184,13 @@ img {
 }
 
 .box {
+	padding: 2px;
+	border: 3px solid var(--third-colour);
+	background-color: var(--second-colour);
+	border-radius: 25px;
+}
+
+.box-lg {
 	padding: 2px;
 	border: 3px solid var(--third-colour);
 	background-color: var(--second-colour);

@@ -1,0 +1,198 @@
+* {
+	box-sizing: border-box;
+}
+
+:root {
+    --first-colour: #839788;
+    --second-colour: #EEE0CB;
+    --third-colour: #BAA898;
+    --fourth-colour: #BFD7EA;
+}
+
+@font-face {
+	font-family: 'Youre So Cool';
+	src: url('https://sirenwatcher.dev/font/Youre_So_Cool.ttf');
+	font-style: normal;
+}
+
+body {
+	margin: 0;
+	padding: 0;
+	position: absolute;
+	width: 100%;
+}
+
+main {
+	background: #D9D9D9;
+	height: 89vh;
+	overflow: auto;
+	padding: 80px;
+}
+
+header a,
+header a:visited,
+eader a:link,
+footer a,
+footer a:visited,
+footer a:link {
+	text-decoration: none;
+	cursor: pointer;
+	color: white;
+}
+
+.white:hover {
+	color: lightgrey;
+}
+
+.black:hover {
+	color: black;
+}
+
+.herbal:hover {
+	color: orange;
+}
+
+.red:hover {
+	color: maroon;
+}
+
+.green:hover {
+	color: lightgreen;
+}
+
+footer a:hover {
+	color: var(--fourth-colour);
+}
+
+.product-header {
+	padding-top: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+.form-group, label {
+	padding: 5px;
+}
+
+form {
+	padding-bottom: 150px;
+}
+
+img {
+	max-width: 75vw;
+	padding: 50px;
+	border-radius: 65px;
+	-webkit-mask-image: radial-gradient(circle, black 55%, rgba(0, 0, 0, 0.01) 80%);
+	mask-image: radial-gradient(circle, black 55%, rgba(0, 0, 0, 0.01) 80%);
+}
+
+.box img {
+	width: 150px;
+	height: 150px;
+	padding: 0 !important;
+	border-radius: 20px;
+}
+
+.header {
+	font-family: 'Youre So Cool', fantasy;
+	font-size: clamp(90%, 3em, 100px);
+	padding-top: 50px;
+	color: var(--second-colour);
+	text-align: center;
+	text-shadow:
+	1px 0 0 var(--third-colour), /* Outline right */
+    0 1px 0 var(--third-colour), /* Outline top */
+    -1px 0 0 var(--third-colour), /* Outline left */
+    0 -1px 0 var(--third-colour), /* Outline bottom */
+    3px 3px 1px var(--first-colour), /* Shadow right */
+    3px 3px 1px var(--first-colour), /* Shadow top */
+    3px 3px 1px var(--first-colour), /* Shadow left */
+    3px 3px 1px var(--first-colour), /* Shadow bottom*/
+    4px 5px 5px rgba(16, 16, 16, 0.5), /* Shadow blur right */
+    1px 10px 10px rgba(16, 16, 16, 0.4), /* Shadow blur top */
+    1px 15px 30px rgba(16, 16, 16, 0.3), /* Shadow blur left */
+    1px 15px 30px rgba(16, 16, 16, 0.2); /* Shadow blur bottom*/
+}
+
+.header-mini {
+	font-family: 'Youre So Cool', fantasy;
+	font-size: 2em;
+	padding-top: 50px;
+	color: var(--second-colour);
+	text-align: center;
+	text-shadow:
+	1px 0 0 var(--third-colour), /* Outline right */
+    0 1px 0 var(--third-colour), /* Outline top */
+    -1px 0 0 var(--third-colour), /* Outline left */
+    0 -1px 0 var(--third-colour), /* Outline bottom */
+    3px 3px 1px var(--first-colour), /* Shadow right */
+    3px 3px 1px var(--first-colour), /* Shadow top */
+    3px 3px 1px var(--first-colour), /* Shadow left */
+    3px 3px 1px var(--first-colour), /* Shadow bottom*/
+    4px 5px 5px rgba(16, 16, 16, 0.5), /* Shadow blur right */
+    1px 10px 10px rgba(16, 16, 16, 0.4), /* Shadow blur top */
+    1px 15px 30px rgba(16, 16, 16, 0.3), /* Shadow blur left */
+    1px 15px 30px rgba(16, 16, 16, 0.2); /* Shadow blur bottom*/
+}
+
+.box {
+	padding: 2px;
+	border: 3px solid var(--third-colour);
+	background-color: var(--second-colour);
+	border-radius: 25px;
+}
+
+.box:hover {
+	border-color: var(--first-colour);
+	animation: shake 2.5s;
+	animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+	0% { transform: translate(1px, 1px) rotate(0deg); }
+	10% { transform: translate(-1px, -2px) rotate(-1deg); }
+	20% { transform: translate(-3px, 0px) rotate(1deg); }
+	30% { transform: translate(3px, 2px) rotate(0deg); }
+	40% { transform: translate(1px, -1px) rotate(1deg); }
+	50% { transform: translate(-1px, 2px) rotate(-1deg); }
+	60% { transform: translate(-3px, 1px) rotate(0deg); }
+	70% { transform: translate(3px, 1px) rotate(-1deg); }
+	80% { transform: translate(-1px, -1px) rotate(1deg); }
+	90% { transform: translate(1px, 2px) rotate(0deg); }
+	100% { transform: translate(1px, -2px) rotate(-1deg); }
+}
+
+.flex-row {
+	padding-top: 100px;
+	gap: 10px;
+	padding-bottom: 100px;
+}
+
+header {
+	letter-spacing: 2px;
+	top: 0;
+	font-size: 15px;
+	width: 100%;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	white-space: nowrap;
+	background: var(--first-colour);
+	padding: 5px;
+	height: 5%;
+}
+
+footer {
+	position: absolute;
+	Width: 100%;
+	letter-spacing: 2px;
+	bottom: 0;
+	font-size: 15px;
+	margin: 0 auto;
+	text-align: center;
+	color: white;
+	white-space: nowrap;
+	background: var(--first-colour);
+	padding: 6px;
+	height: 7.5%;
+}
